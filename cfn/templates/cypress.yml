@@ -1,0 +1,44 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: End-to-end testing with Cypress
+
+Parameters: 
+# Add parameters such as Cypress Key, Github Token, Username and Password
+
+Resources:
+  CodePipelineBucket:
+    Type: AWS::S3::Bucket
+
+  CodePipelineRole:
+    Type: AWS::IAM::Role
+    Description: The role CodePipeline will assume during pipeline execution
+    # refer document https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+
+  CodePipelinePolicy:
+    Type: AWS::IAM::Policy
+    # refer document https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
+
+  CodePipeline:
+    Type: AWS::CodePipeline::Pipeline
+    # refer document https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html
+
+  CodeBuildRole:
+    Type: AWS::IAM::Role
+    # refer document https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+
+  CodeBuildPolicy:
+    Type: AWS::IAM::Policy
+    # refer document https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
+
+  BuildProject:
+    # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html
+
+Metadata:
+  Stackjack:
+    AllowDestroy:
+      - CodePipelineBucket
+      - CodePipelineRole
+      - CodePipelinePolicy
+      - CodeBuildRole
+      - CodeBuildPolicy
+      - CodePipeline
+      - BuildProject

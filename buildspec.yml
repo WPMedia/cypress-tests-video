@@ -1,0 +1,8 @@
+version: 0.2
+
+batch:
+ # use build-list here instead of build matrix
+
+phases:
+# refer https://docs.cypress.io/guides/continuous-integration/aws-codebuild for setup
+

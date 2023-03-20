@@ -1,0 +1,30 @@
+{
+  "name": "cypress-qa-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:info": "cypress info",
+    "cy:verify": "cypress verify",
+    "cy:run": "cypress run",
+    "start:ci": "npm start"
+  },
+  "keywords": [],
+  "author": "Poorva Ramani",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "puppeteer": "^19.7.2",
+    "write-yaml": "^1.0.0"
+  },
+  "files": [
+    "src/*",
+    "node_modules/*",
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "cypress.json"
+  ]
+}

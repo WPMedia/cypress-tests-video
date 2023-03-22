@@ -8,6 +8,7 @@ cfn/.DS_Store
 cypress/.DS_Store
 cypress/e2e/.DS_Store
 node_modules
+cypress/WIP
 
 # Logs
 logs

@@ -1,4 +1,4 @@
 # refer following section on how to add stackjack to github -
 # https://arcpublishing.atlassian.net/wiki/spaces/CPCA/pages/3138650280/AWS+Codepipeline
-template: 
-stack_name:
+template: cfn/templates/cypress.yml
+stack_name: cypress-video

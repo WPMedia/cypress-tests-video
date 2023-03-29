@@ -1,6 +1,6 @@
 const addGetArcTokenCommand = ({ baseUrl, username, password }) => {
 
-    cy.session(username, () => {
+    cy.session({username, password}, () => {
         cy.request({
           method: 'POST',
           url: '/login',

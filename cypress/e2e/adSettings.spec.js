@@ -19,9 +19,7 @@ describe('Channel Preview', { testIsolation: false }, () => {
             cy.wait(2000);
           });
 
-
-describe('Channel Ad Settings', () => {
-  it('should flag missing values and invalid URLs', () => {
+         it('should flag missing values and invalid URLs', () => {
     editChannels.getReactTabs4().click();
     editChannels.getUnsavedChanges().should('have.length', 0);
     editChannels.getSlider().click();
@@ -51,7 +49,6 @@ describe('Channel Ad Settings', () => {
       .blur();
     editChannels.getFieldErrorMessage().should('not.exist');
     editChannels.getUnsavedChanges().should('have.length', 1); */
-  });
-});
+        });
 });
 });

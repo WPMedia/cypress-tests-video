@@ -15,7 +15,7 @@
   "author": "Poorva Ramani",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.8.1",
+    "cypress": "^14.2.1",
     "puppeteer": "^19.7.2",
     "write-yaml": "^1.0.0"
   },
